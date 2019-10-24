@@ -1,0 +1,183 @@
+#curse {
+  height: 540px;
+  width: 510px;
+  overflow: hidden;
+}
+.alessa {
+  height: 520px;
+  width: 490px;
+  background-image: url(https://static.zerochan.net/Violet.Evergarden.%28Character%29.full.2254612.png);
+  background-size: 100%;
+  background-position-y: -40px;
+  color:#000;
+  font-size:11px;
+  transition-duration: 1s;
+  outline:#222 solid 1px;
+  outline-offset:-5px;
+  padding:10px;
+}
+#curse:hover .alessa {
+  filter: grayscale(.8);
+}
+.tabbies {
+  float: left;
+  text-align: center;
+  opacity: 0;
+  transition-duration: .5s;
+  background-color: #222;
+  width: 122px;
+  height: 40px;
+  padding-top:10px;
+}
+#curse:hover .tabbies{
+  opacity: .99;
+}
+.tabbies label {
+  display:block;
+  position:relative;
+  color:#e4e4e4;
+  margin-left:5px;
+  margin-bottom:5px;
+  font-size:20px;
+  z-index: 20;
+}
+.tabbies [type=radio] {
+  display:none;
+}
+.contenido {
+  width:360px;
+  height:400px;
+  overflow:hidden;
+  color:#000;
+  text-align:justify;
+  opacity:0;
+  transition:1s;
+  position:absolute;
+  top:90px;
+  background-color: #222;
+  left: 80px;
+}
+[type=radio]:checked ~ label {
+  z-index:30;
+  color:#000;
+}
+[type=radio]:checked ~ label ~ .contenido {
+  z-index:10;
+  transition:1s all ease-in-out;
+  opacity: .98;
+}
+.sprite, .sprite2, .sprite3, .sprite4 {
+  width: 100px;
+  height: 110px;
+  display: block;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sprite {
+    background-image: url(https://static.zerochan.net/Violet.Evergarden.%28Character%29.full.2707117.jpg);
+  background-position-y: -40px;
+  background-position-x: -20px;
+  background-size: 130%;
+}
+.sprite2 {
+    background-image: url(https://static.zerochan.net/Violet.Evergarden.%28Character%29.full.2693918.png);
+  background-position-y: -30px;
+  background-position-x: -70px;
+  background-size: 230%;
+}
+.sprite3 {
+    background-image: url(https://static.zerochan.net/Violet.Evergarden.%28Character%29.full.2604279.png);
+  background-position-y: -0px;
+  background-position-x: -110px;
+  background-size: 290%;
+}
+.sprite4 {
+    background-image: url(https://static.zerochan.net/Violet.Evergarden.%28Character%29.full.2541502.jpg);
+  background-position-y: -30px;
+  background-position-x: -80px;
+  background-size: 230%;
+}
+.infoninfa, .infoninfa2 {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e4e4e4;
+  letter-spacing: 4px;
+  font: 8px verdana;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  margin-bottom: 4px;
+}
+.infospirit {
+    background-color: #222;
+    width: 180px;
+    padding: 8px;
+    margin: 0 auto;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    top: 0px;
+    font: 9px verdana;
+    color: #fff;
+    text-align: right;
+    margin-top: 2px;
+}
+.infospirit ale{
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.fromhell {
+  font-family: 'Amatic SC', cursive;
+  font-size: 14px;
+  color: #fff;
+  font-weight: lighter;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+  opacity: .3;
+}
+.fromhell ale{
+  font: 10px verdana;
+}
+.thisisale {
+  width: 220px;
+  color: #e4e4e4;
+  height: 150px;
+  padding: 15px;
+  margin: 0 auto;
+  border: 1px solid #e4e4e4;
+  overflow: auto;
+  text-align: justify;
+  font: 10px verdana;
+  margin-top: 5px;
+}
+#ghosta {
+  font-family: 'Amatic SC', cursive;
+  position: relative;
+  font-size: 40px;
+  text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+  color: #fff;
+  left: 42px;
+  transition-duration: .6s;
+  top: 400px;
+  opacity: .2;
+  z-index:500;
+}
+#nameale {
+  font: 4px 'Oswald', sans-serif;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  bottom: -412px;
+  left: 440px;
+  letter-spacing:2px;
+}
